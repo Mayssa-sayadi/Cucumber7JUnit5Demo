@@ -3,7 +3,7 @@
 Feature: Login to HRM Application
 
   Background:
-    Given User is on HRMLogin page "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+    Given User is on HRMLogin page
 
   @ValidCredentials
   Scenario: Login with valid credentials
@@ -32,4 +32,4 @@ Feature: Login to HRM Application
   @ForgetPassword
   Scenario: Verify Forget Password Link On Login Page
     When User clicks on forgot your password link
-    Then User should navigate to new Page
+    Then User should navigate to new Page "Reset Password"
